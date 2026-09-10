@@ -23,8 +23,11 @@
       "Bash(git ls-files*)",
       "Bash(git stash list*)",
       "Bash(git submodule status*)",
+      "Bash(git rev-parse*)",
+      "Bash(git reflog*)",
       "Bash(./gradlew*)",
       "Bash(docker ps*)",
+      "Bash(docker info*)",
       "Bash(docker logs*)",
       "Bash(docker inspect*)",
       "Bash(docker compose ps*)",
@@ -33,7 +36,11 @@
       "Bash(glab ci view*)",
       "Bash(glab ci trace*)",
       "Bash(glab mr view*)",
-      "Bash(glab mr list*)"
+      "Bash(glab mr list*)",
+      "Bash(glab mr diff*)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr diff*)",
+      "Bash(gh pr list*)"
     ]
   },
   "model": "opus",
@@ -73,5 +80,10 @@
       "**Org-specific CLIs**: `glab` (GitLab CLI — never `gh`, per CLAUDE.md)",
       "routine under this repo's working directory (and sibling git submodules, each with its own remote) is in scope; other checkouts under home (`providus_worksheet_tool`, `load-tester-websockets`) are unvetted candidates and excluded"
     ]
+  },
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "xhigh"
+    }
   }
 }

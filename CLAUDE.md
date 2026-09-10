@@ -19,7 +19,8 @@
 - If a branch already has the wrong upstream, fix it with `git branch --unset-upstream` and say so.
 
 ## Environment & workflow
-- GitLab, not GitHub (use `glab`, never `gh`). Jira-style ticket IDs (PD2-xxx).
+- Forge by the origin remote's host: GitLab for work (`glab`), GitHub for personal projects (`gh`).
+  Never point one CLI at the other's host. Jira-style ticket IDs (PD2-xxx) on work repos.
 - Ubuntu. Interactive sudo fails in your shell — when root/auth is needed, give me the command to run myself (I can use the `!` prefix).
 - Long-running processes (Spring Boot apps, dev servers): run in background, or leave them to me — I usually run apps from IntelliJ and paste results back.
 - New shell helpers go in `~/.bash_functions`, written in the same style as the existing functions there.
