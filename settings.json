@@ -55,30 +55,7 @@
   "agentPushNotifEnabled": true,
   "autoMode": {
     "environment": [
-      "### Org-wide",
-      "**Organization**: providus.mu (GitLab group `providus.mu/zoom/zoom-multitenancy`) — inferred from origin remote of this repo",
-      "**Cloud provider(s)**: Google Cloud (Pub/Sub referenced in .env.example and README; `gcloud` used in shell history)",
-      "**Repository visibility**: Not queryable via gh (unsupported host shape) — assume private per shipped default",
-      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
-      "**Secrets management**: None configured",
-      "**Default / protected branches**: `main` is the default branch (per Repo facts); MRs target `develop` per CLAUDE.md — protection status not queryable via gh, treat both as protected by convention",
-      "**CI/CD deploy targets**: None configured",
-      "**Network posture**: None configured",
-      "**Source control**: GitLab (glab, not gh) — this repo and its origin remote `gitlab.com:providus.mu/zoom/zoom-multitenancy/zoom-be/zoom-tenant.git` only",
-      "**Trusted internal domains**: `zoom-db.local`, `zoom-pubsub.local`, `zoom-redis.local` (from .env.example — local dev hostnames for this service)",
-      "**Trusted cloud buckets**: None configured",
-      "**Key internal services**: PostgreSQL (`zoom-db.local`), Redis (`zoom-redis.local`), Google Cloud Pub/Sub (`zoom-pubsub.local`, project `zoom-multitenancy`)",
-      "**Internal package registry**: None configured",
-      "**Sensitive data locations & audiences**: `.env.example` and any `.env` file (gitignored) hold DB/Pub/Sub credentials — do not commit or share outside this repo's maintainers",
-      "**Data retention / declassification**: None configured",
-      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
-      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
-      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
-      "### User-specific",
-      "**Primary use of Claude Code**: software development (Java/Spring Boot microservice work, GitLab MRs, Jira-style tickets)",
-      "**Trusted repo**: this repo (`zoom-tenant`, working directory `/home/adrien/providus/zoom-java/zoom-multi/zoom-parent/zoom-tenant`) and its origin remote on gitlab.com; visibility unconfirmed so treat as private by default — confidential material OK here, secrets never cleared by visibility alone",
-      "**Org-specific CLIs**: `glab` (GitLab CLI — never `gh`, per CLAUDE.md)",
-      "routine under this repo's working directory (and sibling git submodules, each with its own remote) is in scope; other checkouts under home (`providus_worksheet_tool`, `load-tester-websockets`) are unvetted candidates and excluded"
+      "### Org-wide"
     ]
   },
   "modelSettings": {
